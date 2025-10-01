@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Najla Noviolita</title>
+
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Gaya Bintang -->
+ <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #00033a, #162647, #163473);
+    overflow-x: hidden;
+  }
+
+  .stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-image: radial-gradient(rgb(255, 255, 255) 1px, transparent 1px);
+    background-size: 80px 80px;
+    animation: moveStars 100s 1linear infinite;
+    z-index: -1;
+  }
+
+  @keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 5000px 5000px; }
+  }
+</style>
+
+</head>
+
+<body class="bg-gradient-to-b from-[#00033a] via-[#3d5c9b] to-[#163473] min-h-screen">
+
+  <!-- Bintang Background -->
+  <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div class="w-full h-full animate-[moveStars_100s_linear_infinite] bg-[radial-gradient(white_1px,transparent_1px)] bg-[size:80px_80px] opacity-20"></div>
+  </div>
+
+  <!-- Navigasi -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-white/10 backdrop-blur-xl fixed top-0 left-0 w-full z-50">
+  <div class="text-white font-bold text-lg">PORTOFOLIO</div>
+  <div class="flex gap-8">
+    <a href="#software" class="text-white hover:text-gray-300">Software</a>
+    <a href="#koleksi" class="text-white hover:text-gray-300">Koleksi</a>
+    <a href="#tentangsaya" class="text-white hover:text-gray-300">Tentang Saya</a>
+    <a href="#hubungi" class="text-white hover:text-gray-300">Hubungi</a>
+  </div>
+</nav>
+
+
+  <!-- Tentang Saya -->
+<section id="tentangsaya" class="w-full py-40 mt-16">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <!-- Foto Profil -->
+    <div class="relative">
+      <img src="dist/piyuuu.png" alt="Profil" class="w-80 h-80 object-cover shadow-sm rounded-full" />
+    </div>
+
+    <!-- Teks Tentang Saya -->
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-semibold mb-2 text-white">✨ Hai, Saya Najla Noviolita!</h2>
+      <p class="mb-4 text-justify text-white">
+        Saya berasal dari ibu.
+      </p>
+      <p class="mb-4 text-justify text-white">
+        Sejak SMP, saya mulai menekuni hobi editing, menggambar, dan desain. Saya mencoba menggunakan berbagai aplikasi dan software mobile maupun PC. Walaupun masih dalam tahap pembelajaran, saya memiliki semangat dan ambisi besar untuk terus mengembangkan kemampuan editing saya.
+      </p>
+      <p class="text-justify text-white">
+        Melalui portofolio ini, saya ingin membagikan hasil karya saya selama berada di kelas X-XII, sekaligus menunjukkan proses dan perkembangan skill yang saya miliki.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Software -->
+  <section id="software" class="px-6 py-10 overflow-x-auto whitespace-nowrap">
+  <h3 class="text-2xl font-bold mb-8 text-white text-center">SOFTWARE</h3>
+  <div class="flex gap-6 justify-center">
+
+    <!-- 1. Adobe Illustrator -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/1.png" class="w-20 h-20 object-contain" alt="Adobe Illustrator" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">76%</p>
+      <p class="text-sm text-gray-600 text-center">Illustrator</p>
+    </div>
+
+    <!-- 2. Canva -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/2.png" class="w-20 h-20 object-contain" alt="Canva" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">88%</p>
+      <p class="text-sm text-gray-600 text-center">Canva</p>
+    </div>
+
+    <!-- 3. CorelDRAW -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/3.png" class="w-20 h-20 object-contain" alt="CorelDRAW" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">89%</p>
+      <p class="text-sm text-gray-600 text-center">CorelDRAW</p>
+    </div>
+
+    <!-- 4. Premiere Pro -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/4.png" class="w-20 h-20 object-contain" alt="Premiere Pro" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">70%</p>
+      <p class="text-sm text-gray-600 text-center">Premiere Pro</p>
+    </div>
+
+    <!-- 5. Alight Motion -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/5.png" class="w-20 h-20 object-contain" alt="Alight Motion" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">90%</p>
+      <p class="text-sm text-gray-600 text-center">Alight Motion</p>
+    </div>
+
+    <!-- 6. CapCut -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/6.png" class="w-20 h-20 object-contain" alt="CapCut" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">89%</p>
+      <p class="text-sm text-gray-600 text-center">CapCut</p>
+    </div>
+
+    <!-- 7. Hypic -->
+    <div class="bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center w-32">
+      <div class="w-24 h-24 flex items-center justify-center mb-2">
+        <img src="icon/7.png" class="w-20 h-20 object-contain" alt="Hypic" />
+      </div>
+      <p class="font-bold text-gray-800 text-lg">89%</p>
+      <p class="text-sm text-gray-600 text-center">Hypic</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Koleksi Proyek -->
+  <section id="koleksi" class="px-6 py-10">
+  <h3 class="text-2xl font-bold mb-8 text-white text-center">KOLEKSI</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+
+    <!-- CARD 2 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/FIX PK DOD.jpg" alt="Poster PK DOD" class="w-full object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Poster Hemat Listrik</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/hari batik.png" alt="Hari Batik" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Hari Batik</h4>
+        <p class="text-sm"</p>
+      </div>
+    </div>
+
+     <!-- CARD 7 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/POSTERUKK NAJLA NOVIOLITA XI DKV 2.jpg" alt="Poster UKK" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Poster UKK</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+   
+
+    <!-- CARD 5 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/NajlaNoviolita.jpg" alt="Portofolio Najla" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg"> Poster UKK</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/NajlaPastellooo-01-01.jpg" alt="Poster Pastel" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Desain Kotak Spageti</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+    <!-- CARD 10 -->
+    <!-- CARD 10 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/Screenshot 2025-08-06 193620.png" alt="Preview Project" class="w-full object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Desain logo</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+  
+    <!-- CARD 4 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/musang.jpg" alt="Poster Musang" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Desain Mug</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/Screenshot 2025-07-27 215222.png" alt="Slogan PKN" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Spanduk HUT 80</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+
+
+
+    <!-- CARD 11 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/Screenshot 2024-11-07 082829.png" alt="Draft Poster" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Poster produk</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+
+     <!-- CARD 9 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/Screenshot 2025-08-06 192857.png" alt="Proses Editing" class="w-full object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Case Kalender</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+    
+<!-- CARD 1 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/FIX JADWALPIKET-01.jpg" alt="Jadwal Piket" class="w-full  object-cover" />
+      <div class="p-4 text-white">
+        <h4 class="font-semibold text-lg">Jadwal Piket</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+
+    <!-- CARD 12 -->
+    <div class="bg-white/30 backdrop-blur-md rounded-2xl overflow-hidden shadow-lg">
+      <img src="hsil/slogan pkn.png" alt="Draft Poster" class="w-full  object-cover" />
+      <div class="p-4 text-white ">
+        <h4 class="font-semibold text-lg">Spanduk Kebersihan</h4>
+        <p class="text-sm"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section id="hubungi" class="px-6 py-10 rounded-lg bg-[#02033b] text-white">
+  <h2 class="text-2xl font-semibold mb-4">Hubungi Saya</h2>
+  <p>Email: najla.noviolita37@smk.belajar.id</p>
+  <div class="flex gap-4 mt-2">
+    <a href="https://wa.me/623151705847" target="_blank" class="text-green-400 hover:underline flex items-center gap-1">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="https://instagram.com/vishoke_zas" target="_blank" class="text-pink-400 hover:underline flex items-center gap-1">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.youtube.com/@yupirebus" target="_blank" class="text-red-600 hover:underline flex items-center gap-1">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="https://www.tiktok.com/@alwayss_hiim" target="_blank" class="text-white hover:underline flex items-center gap-1">
+      <!-- Kalau icon TikTok ga muncul, bisa ganti pakai gambar kecil -->
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 border-t border-blue-900 text-white">
+    ©2025 - Archived by _NajlaNoviolita • All Rights Reserved
+  </footer>
+
+</body>
+</html>
